@@ -25,7 +25,11 @@
         DesktopRight: DesktopRight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LWIN &kp LCTRL &kp RIGHT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LWIN &kp LCTRL &kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LWIN &kp LCTRL &kp RIGHT_ARROW>;
 
             label = "DESKTOPRIGHT";
         };
@@ -33,7 +37,11 @@
         DesktopLeft: DesktopLeft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LWIN &kp LCTRL &kp LEFT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LWIN &kp LCTRL &kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LWIN &kp LCTRL &kp LEFT_ARROW>;
 
             label = "DESKTOPLEFT";
         };
