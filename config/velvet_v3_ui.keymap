@@ -64,10 +64,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5                     &kp N6              &kp N7          &kp N8    &kp N9           &kp N0         &kp DELETE
-&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)    &kp LG(N4)     &kp RET                    &trans              &kp HOME        &kp UP    &kp END          &kp RIGHT      &trans
-&trans  &trans      &trans      &kp LA(LEFT)  &kp LA(RIGHT)  &trans                     &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LC(RIGHT)  &trans
-                    &trans      &trans        &trans         &trans   &trans    &trans  &mo 3               &trans          &trans    &trans
+&trans  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5                             &kp N6              &kp N7          &kp N8    &kp N9           &kp N0         &kp DELETE
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)    &kp LG(N4)     &kp RET                            &trans              &kp HOME        &kp UP    &kp END          &kp RIGHT      &trans
+&trans  &trans      &trans      &kp LA(LEFT)  &kp LA(RIGHT)  &trans                             &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LC(RIGHT)  &trans
+                    &trans      &trans        &trans         &trans   &trans    &kp LG(DELETE)  &mo 3               &trans          &trans    &trans
             >;
 
             display-name = "Navigation";
@@ -75,10 +75,10 @@
 
         sym {
             bindings = <
-&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                      &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
-&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                       &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                       &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                  &trans    &trans     &trans    &mo 3      &kp HASH    &trans  &trans     &trans    &trans     &trans
+&kp CAPSLOCK  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans    &trans
+&trans        &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                       &kp PRCNT       &kp LBRC              &kp SEMI               &kp RBRC         &kp EXCL  &kp QUESTION
+&trans        &trans    &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                       &kp AT          &kp PIPE              &kp TILDE              &kp AMPS         &trans    &trans
+                        &trans    &trans     &trans    &mo 3      &kp HASH    &trans  &trans          &trans                &trans                 &trans
             >;
 
             display-name = "Symbols";
@@ -86,10 +86,10 @@
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3   &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP   &none         &studio_unlock
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT     &none         &none
-                    &none   &none    &none    &none    &none    &none  &none         &none         &DesktopLeft      &DesktopRight
+&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4  &bt BT_CLR
+&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP       &none         &studio_unlock
+&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT         &none         &none
+                    &none   &none    &none    &none    &none    &none  &none         &none         &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))
             >;
 
             display-name = "Adjust";
