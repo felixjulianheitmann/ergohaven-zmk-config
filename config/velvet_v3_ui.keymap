@@ -19,6 +19,13 @@
             tapping-term-ms = <150>;
             hold-while-undecided;
         };
+
+        layertapright: layertapright {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYERTAPRIGHT";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>;
+        };
     };
 
     macros {
