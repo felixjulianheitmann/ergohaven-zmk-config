@@ -70,10 +70,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5                             &kp N6              &kp N7          &kp N8    &kp N9           &kp N0         &kp DELETE
-&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)    &kp LG(N4)     &kp RET                            &trans              &kp HOME        &kp UP    &kp END          &kp RIGHT      &trans
-&trans  &trans      &trans      &kp LA(LEFT)  &kp LA(RIGHT)  &trans                             &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LC(RIGHT)  &trans
-                    &trans      &trans        &trans         &trans   &trans    &kp LG(DELETE)  &mo 3               &trans          &trans    &trans
+&trans  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5                            &kp N6              &kp N7          &kp N8    &kp N9           &kp N0         &kp DELETE
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)    &kp LG(N4)     &kp RET                           &trans              &kp HOME        &kp UP    &kp END          &kp RIGHT      &trans
+&trans  &trans      &trans      &kp LA(LEFT)  &kp LA(RIGHT)  &trans                            &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LC(RIGHT)  &trans
+                    &trans      &trans        &trans         &trans   &trans    &kp LC(ENTER)  &mo 3               &trans          &trans    &trans
             >;
 
             display-name = "Navigation";
@@ -81,10 +81,10 @@
 
         sym {
             bindings = <
-&none        &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                        &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_QUESTION  &trans
-&kp LA(TAB)  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                      &kp PRCNT          &none                    &none                     &none               &none            &kp DE_POUND
-&mo 7        &kp DE_LESS_THAN    &none                 &none           &none          &none                                 &none              &none                    &none                     &none               &trans           &trans
-                                 &trans                &trans          &trans         &mo 3             &kp HASH    &trans  &trans             &trans                   &trans                    &trans
+&none   &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                            &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_QUESTION  &trans
+&trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                          &kp PRCNT          &none                    &none                     &none               &none            &kp DE_POUND
+&mo 7   &kp DE_LESS_THAN    &none                 &none           &none          &none                                     &none              &none                    &none                     &none               &trans           &trans
+                            &trans                &trans          &trans         &mo 3             &kp DE_MINUS    &trans  &trans             &trans                   &trans                    &trans
             >;
 
             display-name = "Symbols";
@@ -147,7 +147,7 @@
 
         User1 {
             bindings = <
-&trans  &kp B               &kp LG(PAGE_UP)  &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &kp LG(PAGE_UP)  &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LEFT_ARROW)  &trans           &kp LG(RIGHT_ARROW)  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans              &trans           &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                             &trans           &trans               &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
