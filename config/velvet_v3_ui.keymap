@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYERTAPRIGHT";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&mo 2>, <&mo 8>;
         };
     };
 
