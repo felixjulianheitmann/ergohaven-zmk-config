@@ -147,7 +147,7 @@
 
         User1 {
             bindings = <
-&trans  &trans              &kp LG(PAGE_UP)  &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp B               &kp LG(PAGE_UP)  &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LEFT_ARROW)  &trans           &kp LG(RIGHT_ARROW)  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans              &trans           &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                             &trans           &trans               &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
