@@ -147,10 +147,10 @@
 
         User1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans            &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans            &trans             &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans             &trans
+&trans  &trans              &kp LG(PAGE_UP)  &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LEFT_ARROW)  &trans           &kp LG(RIGHT_ARROW)  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans           &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans           &trans               &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "User1";
