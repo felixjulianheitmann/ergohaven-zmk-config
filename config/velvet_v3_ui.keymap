@@ -26,6 +26,13 @@
             #binding-cells = <0>;
             bindings = <&mo 2>, <&mo 8>;
         };
+
+        codeblock_dance: codeblock_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CODEBLOCK_DANCE";
+            #binding-cells = <0>;
+            bindings = <&kp DE_GRAVE>, <&codeblock_dance>;
+        };
     };
 
     macros {
@@ -51,6 +58,13 @@
                 <&kp LWIN &kp LCTRL &kp LEFT_ARROW>;
 
             label = "DESKTOPLEFT";
+        };
+
+        codeblock: codeblock {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp RET &kp RET &kp GRAVE &kp GRAVE &kp GRAVE &kp UP_ARROW>;
+            label = "CODEBLOCK";
         };
     };
 
@@ -137,7 +151,7 @@
         User0 {
             bindings = <
 &trans  &trans       &trans  &trans  &trans  &trans                    &kp DE_LEFT_BRACE  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp RIGHT_BRACE  &kp DE_BACKSLASH  &trans
-&trans  &trans       &trans  &trans  &trans  &trans                    &trans             &trans               &kp DE_ACUTE          &trans           &trans            &trans
+&trans  &trans       &trans  &trans  &trans  &trans                    &trans             &trans               &codeblock            &trans           &trans            &trans
 &trans  &kp DE_PIPE  &trans  &trans  &trans  &trans                    &trans             &trans               &trans                &trans           &trans            &trans
                      &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans               &trans                &trans
             >;
