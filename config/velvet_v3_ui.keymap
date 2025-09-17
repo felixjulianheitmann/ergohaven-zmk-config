@@ -96,8 +96,8 @@
         sym {
             bindings = <
 &none   &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                            &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL     &kp DE_QUESTION    &kp DELETE
-&trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                          &kp PRCNT     &none                    &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_POUND
-&mo 7   &kp DE_LESS_THAN    &none                 &none           &none          &none                                     &none         &none                    &kp DE_SEMICOLON          &kp DE_COLON     &trans             &trans
+&trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                          &kp PRCNT     &none                    &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
+&mo 7   &kp DE_LESS_THAN    &none                 &none           &none          &none                                     &none         &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_POUND       &trans
                             &trans                &trans          &trans         &mo 3             &kp DE_MINUS    &trans  &trans        &trans                   &trans                    &trans
             >;
 
