@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYERTAPRIGHT";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 8>;
+            bindings = <&mo 2>, <&mo 8>, <&mo 10>;
         };
 
         codeblock_dance: codeblock_dance {
@@ -84,10 +84,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5                            &kp N6              &kp N7          &kp N8    &kp N9           &kp N0         &trans
-&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)    &kp LG(N4)     &kp RET                           &trans              &kp HOME        &kp UP    &kp END          &kp RIGHT      &trans
-&trans  &trans      &trans      &kp LA(LEFT)  &kp LA(RIGHT)  &trans                            &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LC(RIGHT)  &trans
-                    &trans      &trans        &trans         &trans   &trans    &kp LC(ENTER)  &mo 3               &trans          &trans    &trans
+&trans  &kp N1      &kp N2      &kp N3        &kp N4         &kp N5                           &kp N6              &kp N7          &kp N8    &kp N9           &kp N0         &trans
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)    &kp LG(N4)     &trans                           &trans              &kp HOME        &kp UP    &kp END          &trans         &kp PAGE_UP
+&trans  &trans      &trans      &kp LA(LEFT)  &kp LA(RIGHT)  &trans                           &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LC(RIGHT)  &kp PAGE_DOWN
+                    &trans      &trans        &trans         &trans  &trans    &kp LC(ENTER)  &mo 3               &trans          &trans    &trans
             >;
 
             display-name = "Navigation";
@@ -95,10 +95,10 @@
 
         sym {
             bindings = <
-&none   &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                            &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL     &kp DE_QUESTION    &kp DELETE
-&trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                          &kp PRCNT     &none                    &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
-&mo 7   &kp DE_LESS_THAN    &none                 &none           &none          &none                                     &none         &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_POUND       &trans
-                            &trans                &trans          &trans         &mo 3             &kp DE_MINUS    &trans  &trans        &trans                   &trans                    &trans
+&kp DELETE  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                            &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL     &kp DE_QUESTION    &trans
+&trans      &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                          &kp PRCNT     &none                    &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
+&mo 7       &kp DE_LESS_THAN    &none                 &none           &none          &none                                     &none         &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_POUND       &trans
+                                &trans                &trans          &trans         &mo 3             &kp DE_MINUS    &trans  &trans        &trans                   &trans                    &trans
             >;
 
             display-name = "Symbols";
@@ -106,10 +106,10 @@
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP       &none         &studio_unlock
-&kp CAPS     &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT         &none         &none
-                    &none   &none    &none    &none    &none    &none  &none         &none         &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))
+&bootloader  &trans  &trans  &trans  &trans  &trans                    &trans  &trans        &trans            &trans             &trans        &bt BT_CLR
+&trans       &trans  &trans  &trans  &trans  &trans                    &trans  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP       &trans        &out OUT_TOG
+&kp CAPS     &trans  &trans  &trans  &trans  &trans                    &trans  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT         &bt BT_SEL 0  &bt BT_SEL 1
+                     &trans  &trans  &trans  &none   &trans    &trans  &none   &trans        &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))
             >;
 
             display-name = "Adjust";
@@ -150,9 +150,9 @@
 
         User0 {
             bindings = <
-&trans  &trans       &trans  &trans  &trans  &trans                    &kp DE_LEFT_BRACE  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp RIGHT_BRACE  &kp DE_BACKSLASH  &trans
-&trans  &trans       &trans  &trans  &trans  &trans                    &trans             &trans               &codeblock            &trans           &trans            &trans
-&trans  &kp DE_PIPE  &trans  &trans  &trans  &trans                    &trans             &trans               &trans                &trans           &trans            &trans
+&trans  &trans       &trans  &trans  &trans  &trans                    &kp DE_LEFT_BRACE  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp DE_BACKSLASH  &trans
+&trans  &trans       &trans  &trans  &trans  &trans                    &trans             &trans               &codeblock            &trans              &trans            &trans
+&trans  &kp DE_PIPE  &trans  &trans  &trans  &trans                    &trans             &trans               &trans                &trans              &trans            &trans
                      &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans               &trans                &trans
             >;
 
@@ -161,10 +161,10 @@
 
         User1 {
             bindings = <
-&trans  &trans              &kp LG(PAGE_UP)  &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(LEFT_ARROW)  &trans           &kp LG(RIGHT_ARROW)  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans           &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans           &trans               &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LS(TAB))     &kp LG(PAGE_UP)  &kp LA(TAB)          &trans  &trans                    &trans  &kp C_VOL_DN    &kp K_MUTE        &kp C_VOL_UP  &trans  &trans
+&trans  &kp LG(LEFT_ARROW)  &trans           &kp LG(RIGHT_ARROW)  &trans  &trans                    &trans  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT    &trans  &trans
+&trans  &trans              &trans           &trans               &trans  &trans                    &trans  &trans          &trans            &trans        &trans  &trans
+                            &trans           &trans               &trans  &trans  &trans    &trans  &trans  &trans          &trans            &trans
             >;
 
             display-name = "User1";
@@ -183,10 +183,10 @@
 
         User3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans   &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "User3";
