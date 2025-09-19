@@ -43,6 +43,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        morph_del: morph_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -83,10 +92,10 @@
 
         base {
             bindings = <
-&kp ESC    &hold_alt DE_Q DE_AT        &kp DE_W      &kp DE_E      &kp DE_R   &kp DE_T                        &kp DE_Z        &hold_alt DE_U DE_U_UMLAUT  &kp DE_I  &hold_alt DE_O DE_O_UMLAUT  &kp DE_P      &kp BSPC
-&kp TAB    &hold_alt DE_A DE_A_UMLAUT  &kp DE_S      &kp DE_D      &kp DE_F   &kp DE_G                        &kp DE_H        &kp DE_J                    &kp DE_K  &kp DE_L                    &kp DE_MINUS  &kp DE_PLUS
-&kp LSHFT  &kp DE_Y                    &kp DE_X      &kp DE_C      &kp DE_V   &kp DE_B                        &kp DE_N        &kp DE_M                    &none     &kp DE_COMMA                &kp DE_DOT    &kp RSHFT
-                                       &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mo 1     &kp SPACE    &kp RET  &layertapright  &mo 4                       &none     &none
+&kp ESC    &hold_alt DE_Q DE_AT        &kp DE_W      &hold_alt DE_E DE_EURO  &kp DE_R   &kp DE_T                        &kp DE_Z        &hold_alt DE_U DE_U_UMLAUT  &kp DE_I  &hold_alt DE_O DE_O_UMLAUT  &kp DE_P      &morph_del
+&kp TAB    &hold_alt DE_A DE_A_UMLAUT  &kp DE_S      &kp DE_D                &kp DE_F   &kp DE_G                        &kp DE_H        &kp DE_J                    &kp DE_K  &kp DE_L                    &kp DE_MINUS  &kp DE_PLUS
+&kp LSHFT  &kp DE_Y                    &kp DE_X      &kp DE_C                &kp DE_V   &kp DE_B                        &kp DE_N        &kp DE_M                    &none     &kp DE_COMMA                &kp DE_DOT    &kp RSHFT
+                                       &kp LEFT_WIN  &kp LEFT_ALT            &kp LCTRL  &mo 1     &kp SPACE    &kp RET  &layertapright  &mo 4                       &none     &none
             >;
 
             display-name = "Base";
@@ -105,10 +114,10 @@
 
         sym {
             bindings = <
-&kp DELETE  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                            &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL     &kp DE_QUESTION    &trans
-&trans      &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                          &kp PRCNT     &none                    &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
-&mo 7       &kp DE_LESS_THAN    &none                 &none           &none          &none                                     &none         &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_POUND       &trans
-                                &trans                &trans          &trans         &mo 3             &kp DE_MINUS    &trans  &trans        &trans                   &trans                    &trans
+&trans  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                            &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL     &kp DE_QUESTION    &trans
+&trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                          &kp PRCNT     &none                    &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
+&mo 7   &kp DE_LESS_THAN    &none                 &none           &none          &none                                     &none         &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_POUND       &trans
+                            &trans                &trans          &trans         &mo 3             &kp DE_MINUS    &trans  &trans        &trans                   &trans                    &trans
             >;
 
             display-name = "Symbols";
