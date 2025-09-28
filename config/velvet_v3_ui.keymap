@@ -133,8 +133,8 @@
         adj {
             bindings = <
 &none             &kp LC(LS(UP_ARROW))  &kp LC(LA(UP_ARROW))    &kp LC(LS(DOWN_ARROW))  &kp LC(LS(DE_L))    &none                  &none  &none         &none             &none              &none         &none
-&kp LA(UP_ARROW)  &kp LC(LS(PAGE_UP))   &kp LC(LA(DOWN_ARROW))  &kp LC(LS(PAGE_DOWN))   &kp LA(DOWN_ARROW)  &none                  &none  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP       &none         &out OUT_TOG
-&kp CAPS          &none                 &none                   &none                   &none               &none                  &none  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT         &bt BT_SEL 0  &bt BT_SEL 1
+&kp LA(UP_ARROW)  &kp LC(LS(DE_A))      &kp LC(LA(DOWN_ARROW))  &kp LC(LS(DE_D))        &kp LA(DOWN_ARROW)  &none                  &none  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP       &none         &out OUT_TOG
+&kp CAPS          &kp LS(LC(PAGE_UP))   &none                   &kp LA(LS(PAGE_DOWN))   &none               &none                  &none  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT         &bt BT_SEL 0  &bt BT_SEL 1
                                         &none                   &none                   &none               &none  &none    &none  &none  &none         &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))
             >;
 
