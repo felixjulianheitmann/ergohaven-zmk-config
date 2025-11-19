@@ -125,7 +125,7 @@
             bindings = <
 &trans  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                      &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL     &kp DE_QUESTION    &trans
 &trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &kp DE_TILDE   &kp DE_AMPERSAND                    &kp PRCNT     &kp DE_CARET             &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
-&mo 7   &kp DE_LESS_THAN    &kp DE_GT             &none           &none          &none                               &kp DE_POUND  &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_TILDE       &trans
+&mo 7   &kp DE_LESS_THAN    &kp DE_GT             &none           &none          &none                               &kp DE_POUND  &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_TILDE       &mo 9
                             &trans                &trans          &trans         &mo 3             &trans    &trans  &trans        &trans                   &trans                    &trans
             >;
 
@@ -187,7 +187,7 @@
             display-name = "User0";
         };
 
-        KWin {
+        sys {
             bindings = <
 &trans  &kp LA(LS(TAB))     &kp LG(PAGE_UP)  &kp LA(TAB)          &trans  &trans                    &trans  &kp C_VOL_DN    &kp K_MUTE        &kp C_VOL_UP  &kp C_VOL_DN      &kp C_VOL_UP
 &trans  &kp LG(LEFT_ARROW)  &trans           &kp LG(RIGHT_ARROW)  &trans  &trans                    &trans  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp K_PLAY_PAUSE  &kp K_MUTE
@@ -195,10 +195,10 @@
                             &kp LG(LEFT)     &kp LG(RIGHT)        &trans  &trans  &trans    &trans  &trans  &trans          &trans            &trans
             >;
 
-            display-name = "User1";
+            display-name = "System shortcuts";
         };
 
-        User2 {
+        num {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -206,7 +206,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            display-name = "User2";
+            display-name = "NumBlock";
         };
 
         User3 {
