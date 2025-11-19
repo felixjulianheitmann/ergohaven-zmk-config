@@ -200,10 +200,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DE_PLUS                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DE_MINUS                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_COMMA  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER                       &trans  &trans  &trans  &trans  &trans  &trans
+                      &kp DE_DOT       &kp KP_NUMBER_0  &trans           &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "NumBlock";
