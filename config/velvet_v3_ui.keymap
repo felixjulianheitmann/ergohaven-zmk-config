@@ -124,7 +124,7 @@
         sym {
             bindings = <
 &trans  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT                      &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL     &kp DE_QUESTION    &trans
-&trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &none          &kp DE_AMPERSAND                    &kp PRCNT     &kp DE_CARET             &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
+&trans  &kp DE_AT           &kp DE_SZ             &kp DE_EURO     &kp DE_TILDE   &kp DE_AMPERSAND                    &kp PRCNT     &kp DE_CARET             &kp DE_GRAVE              &kp DE_ASTERISK  &kp DE_UNDERSCORE  &kp DE_APOSTROPHE
 &mo 7   &kp DE_LESS_THAN    &kp DE_GT             &none           &none          &none                               &kp DE_POUND  &none                    &kp DE_SEMICOLON          &kp DE_COLON     &kp DE_TILDE       &trans
                             &trans                &trans          &trans         &mo 3             &trans    &trans  &trans        &trans                   &trans                    &trans
             >;
