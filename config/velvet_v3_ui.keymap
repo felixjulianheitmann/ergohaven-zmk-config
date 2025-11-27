@@ -200,10 +200,10 @@
 
         num {
             bindings = <
-&trans         &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp DE_PLUS                       &kp LA(LG(F13))  &kp LG(LA(F14))  &kp LA(LG(F15))  &kp LG(LA(F16))  &kp LG(LA(F17))  &kp LA(LG(F18))
-&trans         &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp DE_MINUS                      &kp LG(LA(F7))   &kp LG(LA(F8))   &kp LA(F9)       &kp LA(LG(F10))  &kp LA(LG(F11))  &kp LA(LG(F12))
-&kp LEFT_META  &kp DE_COMMA    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp ENTER                         &kp LG(LA(F1))   &kp LG(LA(F2))   &kp LG(LA(F3))   &kp LG(LA(F4))   &kp LG(LA(F5))   &kp LG(LA(F6))
-                               &kp DE_DOT       &kp KP_NUMBER_0  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &trans           &trans           &trans           &trans
+&trans         &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DE_PLUS                       &kp LA(LG(F13))  &kp LG(LA(F14))  &kp LA(LG(F15))  &kp LG(LA(F16))  &kp LG(LA(F17))  &kp LA(LG(F18))
+&trans         &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DE_MINUS                      &kp LG(LA(F7))   &kp LG(LA(F8))   &kp LA(F9)       &kp LA(LG(F10))  &kp LA(LG(F11))  &kp LA(LG(F12))
+&kp LEFT_META  &kp DE_COMMA    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER                         &kp LG(LA(F1))   &kp LG(LA(F2))   &kp LG(LA(F3))   &kp LG(LA(F4))   &kp LG(LA(F5))   &kp LG(LA(F6))
+                               &kp DE_DOT       &kp KP_NUMBER_0  &kp RIGHT_ALT    &kp LEFT_SHIFT  &trans    &trans  &trans           &trans           &trans           &trans
             >;
 
             display-name = "NumBlock";
