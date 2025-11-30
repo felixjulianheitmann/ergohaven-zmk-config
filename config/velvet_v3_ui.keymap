@@ -133,7 +133,7 @@
                                &kp LA(F4)  &trans        &trans         &trans  &trans    &trans  &mo 3               &trans          &kp LA(LEFT_ARROW)  &kp LA(RIGHT)
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym {
