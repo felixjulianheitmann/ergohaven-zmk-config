@@ -89,7 +89,7 @@
         codeblock: codeblock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DE_GRAVE &kp DE_GRAVE &kp DE_GRAVE &kp RET &kp RET &kp DE_GRAVE &kp DE_GRAVE &kp DE_GRAVE &kp DE_SPACE &kp UP_ARROW>;
+            bindings = <&kp DE_GRAVE &kp DE_GRAVE &kp DE_GRAVE &kp RET &kp ENTER &kp RET &kp DE_GRAVE &kp DE_GRAVE &kp DE_GRAVE &kp DE_SPACE &kp UP_ARROW>;
             label = "CODEBLOCK";
             wait-ms = <5>;
             tap-ms = <5>;
