@@ -118,13 +118,6 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
-
-        window_switcher: window_switcher {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp>;
-            label = "WINDOW_SWITCHER";
-        };
     };
 
     keymap {
