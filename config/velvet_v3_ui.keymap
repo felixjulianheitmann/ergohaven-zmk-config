@@ -124,7 +124,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(DE_Z) &kp DE_N9 &kp DE_N2>;
             label = "WINDOWS_CENTER_SNAP";
-            wait-ms = <25>;
+            wait-ms = <100>;
         };
     };
 
