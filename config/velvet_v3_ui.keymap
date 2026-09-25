@@ -204,10 +204,10 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans      &trans  &bt BT_CLR_ALL
+&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3    &trans  &out OUT_USB
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans      &trans  &out OUT_BLE
+                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &sys_reset
             >;
 
             display-name = "Scroll";
